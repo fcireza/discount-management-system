@@ -180,7 +180,7 @@ Main use cases:
 ### Tech Stack
 
 **Backend**
-- .NET 10.0
+- .NET 8.0
 - ASP.NET Core Web API
 - Entity Framework Core (In‑Memory Database)
 - Swagger / Swashbuckle
