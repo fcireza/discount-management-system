@@ -1,5 +1,5 @@
 using backend.src.domain.Entities;
-using Application.DTOs.ApplyDiscountRequestDto;
+using backend.src.application.DTOs.ApplyDiscountRequestDto;
 using backend.src.domain.Enums;
 
 namespace backend.src.domain.Entities.Discounts;

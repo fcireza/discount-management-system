@@ -1,6 +1,6 @@
-using Application.DTOs.ApplyDiscountRequestDto;
-using Application.DTOs.DiscountResponseDto;
-using backend.src.application.DTOs;
+using backend.src.application.DTOs.ApplyDiscountRequestDto;
+using backend.src.application.DTOs.DiscountResponseDto;
+using backend.src.application.DTOs.createDiscountDto;
 using backend.src.application.Interfaces;
 using backend.src.domain.Entities.Discounts;
 
@@ -44,7 +44,7 @@ public class DiscountService
         var getDiscount = await _repository.GetByIdAsync(dto.discountId)
             ?? throw new Exception("Discount not found");
 
-        var validation = getDiscount.Validate(dto.quantity);
+        var validation = getDiscount.ValidateApply(dto);
         if (!validation.IsValid)
             throw new ArgumentException(validation.ErrorMessage);
 

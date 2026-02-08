@@ -1,5 +1,4 @@
-namespace Application.DTOs.ApplyDiscountRequestDto
-{
+namespace backend.src.application.DTOs.ApplyDiscountRequestDto{
     public class ApplyDiscountRequestDto
     {
         public float unitPrice { get; set; }
