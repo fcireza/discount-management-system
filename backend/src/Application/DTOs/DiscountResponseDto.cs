@@ -1,5 +1,3 @@
-using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
-
 namespace Application.DTOs.DiscountResponseDto;
 
 public class DiscountResponseDto

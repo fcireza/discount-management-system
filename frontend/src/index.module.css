@@ -1,7 +1,9 @@
 :root {
+  
     --white:#ffffff;
     --black:#000000;
-  /* Primary layer */
+  
+    /* Primary layer */
   --color-bg-primary: #d62228;
   --color-hover-primary: #f06267;
   --color-text-primary: #333333;

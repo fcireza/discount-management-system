@@ -8,7 +8,7 @@ API RESTful diseñada para gestionar diferentes tipos de descuentos y aplicarlos
 
 ## Tecnologías Core
 
-- **.NET 10.0**: Framework principal
+- **.NET 8.0**: Framework principal
 - **ASP.NET Core Web API**: Para endpoints REST
 - **Entity Framework Core**: ORM para acceso a datos
 - **In-Memory Database**: Base de datos volátil para desarrollo

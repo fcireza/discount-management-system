@@ -9,6 +9,7 @@ export interface FieldConfig {
   type: 'number' | 'text';
   placeholder?: string;
   inputProps?: Record<string, number>;
+  required:boolean;
   adornment?: { position: 'start' | 'end'; text: string };
 }
 
@@ -32,6 +33,7 @@ export const DISCOUNT_CONFIG: Record<DiscountType, DiscountTypeConfig> = {
         placeholder: 'Ej: 10',
         inputProps: { min: 0, max: 100, step: 0.01 },
         adornment: { position: 'end', text: '%' },
+        required: true,
       },
     ],
     formatter: (d) => (d._percentage ? `${d._percentage}%` : '-'),
@@ -48,7 +50,8 @@ export const DISCOUNT_CONFIG: Record<DiscountType, DiscountTypeConfig> = {
         placeholder: 'Ej: 100',
         inputProps: { min: 0, step: 0.01 },
         adornment: { position: 'start', text: '$' },
-      },
+        required: true,
+      }
     ],
     formatter: (d) => (d._amount ? `$${d._amount}` : '-'),
   },

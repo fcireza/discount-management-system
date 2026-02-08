@@ -64,6 +64,7 @@ export function SelectTypeDiscount({
           onChange={(e) => onFieldChange(field.name, e.target.value)}
           placeholder={field.placeholder}
           slotProps={{ htmlInput: field.inputProps }}
+          required={field.required}
           InputProps={
             field.adornment
               ? {

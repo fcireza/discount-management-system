@@ -4,18 +4,27 @@ API RESTful para gestión de descuentos desarrollada con .NET y Entity Framework
 
 ## Índice
 
-- [Requisitos](#-requisitos)
-- [Configuración](#️-configuración)
-- [Ejecución](#-ejecución)
-- [Estructura del proyecto](#️-estructura-del-proyecto)
-- [Tecnologías utilizadas](#-tecnologías-utilizadas)
-- [Documentación adicional](#-documentación-adicional)
+- [Backend - Sistema de Descuentos](#backend---sistema-de-descuentos)
+  - [Índice](#índice)
+  - [📋 Requisitos](#-requisitos)
+    - [Tecnologías necesarias](#tecnologías-necesarias)
+    - [Dependencias del proyecto](#dependencias-del-proyecto)
+  - [⚙️ Configuración](#️-configuración)
+    - [Archivo `.env` (requerido)](#archivo-env-requerido)
+    - [Archivos de configuración](#archivos-de-configuración)
+  - [🚀 Ejecución](#-ejecución)
+    - [1. Restaurar dependencias](#1-restaurar-dependencias)
+    - [2. Ejecutar el proyecto](#2-ejecutar-el-proyecto)
+    - [Comandos adicionales](#comandos-adicionales)
+  - [🏗️ Estructura del proyecto](#️-estructura-del-proyecto)
+  - [🔧 Tecnologías utilizadas](#-tecnologías-utilizadas)
+  - [📚 Documentación adicional](#-documentación-adicional)
 
 ## 📋 Requisitos
 
 ### Tecnologías necesarias
 
-- **.NET SDK 10.0**: [Descargar aquí](https://dotnet.microsoft.com/download/dotnet/10.0)
+- **.NET SDK 10.0**: [Descargar aquí](https://dotnet.microsoft.com/download/dotnet/8.0)
   ```bash
   # Verificar instalación
   dotnet --version
@@ -25,9 +34,9 @@ API RESTful para gestión de descuentos desarrollada con .NET y Entity Framework
 
 Las dependencias se instalan automáticamente al ejecutar `dotnet restore`:
 
-- **Microsoft.EntityFrameworkCore** (10.0.2) - ORM para acceso a datos
-- **Microsoft.EntityFrameworkCore.InMemory** (10.0.2) - Base de datos en memoria
-- **Swashbuckle.AspNetCore** (10.1.2) - Documentación Swagger/OpenAPI
+- **Microsoft.EntityFrameworkCore** (8.0.x) - ORM para acceso a datos
+- **Microsoft.EntityFrameworkCore.InMemory** (8.0.x) - Base de datos en memoria
+- **Swashbuckle.AspNetCore** (8.0.x) - Documentación Swagger/OpenAPI
 - **DotNetEnv** (3.1.1) - Gestión de variables de entorno
 
 ## ⚙️ Configuración

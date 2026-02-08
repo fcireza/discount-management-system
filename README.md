@@ -94,7 +94,7 @@ Más detalles en la documentación de [backend](docs/backend/ARCHITECTURE.md) y 
 
 ### 1. Requisitos
 
-- .NET SDK 10.0 o superior
+- .NET SDK 8.0 o superior
 - Node.js 18 o superior
 
 ### 2. Backend (.NET API)

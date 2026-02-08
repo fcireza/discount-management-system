@@ -10,12 +10,6 @@ function App() {
 
   return (
     <>
-      <head>
-          <title>Discount APP</title>
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <meta name="description" content="Discount Management System" />
-          <link rel="icon" type="image/svg+xml" href="/icon.svg" />
-      </head>
       <Box
         sx={{
           minHeight: '100vh',

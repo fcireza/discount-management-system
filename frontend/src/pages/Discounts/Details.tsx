@@ -44,7 +44,7 @@ export function DiscountDetailsPage({ discountId, onNavigateToList }: Props) {
         Volver al listado
       </Button>
 
-      <Card style={{width:'50'}}>
+      <Card style={{width:'auto', maxWidth: 800,justifyContent:'center', margin:'0 auto'}}>
         <CardContent>
           <Typography variant="h5" gutterBottom>
             Detalles del Descuento

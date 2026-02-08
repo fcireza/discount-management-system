@@ -1,4 +1,3 @@
-
 using backend.src.domain.Enums;
 
 namespace backend.src.domain.Entities.Discounts;
@@ -12,8 +11,8 @@ public class FixedAmountDiscount : Discounts
 
     public FixedAmountDiscount(Guid discountId, string Name, float amount) :
      base(discountId, Name, DiscountType.FixedAmountDiscount)
-    {
-        this._amount = amount;
+    { 
+        this._amount = (amount <= 0) ? 0 : amount;
     }
 
     public override float CalculateDiscount(float unitPrice, int quantity)

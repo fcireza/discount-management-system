@@ -3,7 +3,7 @@ import MenuBookIcon from "@mui/icons-material/MenuBook";
 
 function Footer() {
   const apiBaseUrl =
-    import.meta.env.VITE_API_BASE_URL ?? "http://localhost:5107/api";
+    import.meta.env.VITE_API_BASE_URL ?? "http://localhost:5107";
   const backendUrl = apiBaseUrl.replace(/\/api$/, "");
   const swaggerUrl = `${backendUrl}/swagger/index.html`;
 

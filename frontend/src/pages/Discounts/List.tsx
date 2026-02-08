@@ -24,7 +24,6 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 import DeleteIcon from '@mui/icons-material/Delete';
 
 interface Props {
-  onNavigateToForm: () => void;
   onNavigateToSimulator: (discountId?: string) => void;
   onNavigateToDetails: (discountId: string) => void;
 }

@@ -6,10 +6,11 @@ export async function httpClient<T>(
 ): Promise<T> {
     // Fetch a la API
     const response = await fetch(`${BASE_URL}${input}`, {
+        ...options,
         headers: {
             'Content-Type': 'application/json',
+            ...options?.headers,
         },
-        ...options,
     });
 
     if (!response.ok) {

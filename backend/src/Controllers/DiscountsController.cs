@@ -25,7 +25,6 @@ namespace DiscountsControllers
         {
             try
             {
-                dto.Type = dto.Type;
                 await _service.CreateDiscountAsync(dto);
                 return Ok();
             }
@@ -88,7 +87,7 @@ namespace DiscountsControllers
                 }
                 // Lo borra
                 await _service.DeleteById(discountId);
-                return StatusCode(204,"Discount deleted");
+                return NoContent();
             }
             catch (System.Exception exception)
             {
@@ -106,9 +105,9 @@ namespace DiscountsControllers
 
                 return Ok(result);
             }
-            catch (Exception ex)
+            catch (System.Exception exception)
             {
-                return NotFound(ex.Message);
+                return StatusCode(500, "Error: " + exception.Message);
             }
         }
     }

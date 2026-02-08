@@ -1,4 +1,3 @@
-using backend.src.domain.Entities;
 using backend.src.domain.Enums;
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
