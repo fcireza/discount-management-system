@@ -1,0 +1,38 @@
+:root {
+  
+    --white:#ffffff;
+    --black:#000000;
+  
+    /* Primary layer */
+  --color-bg-primary: #d62228;
+  --color-hover-primary: #f06267;
+  --color-text-primary: #333333;
+
+  /* Secondary layer */
+  --color-bg-secondary: #0357ff;
+  --color-hover-secondary: #5b7af8;
+  --color-text-secondary: #555555;
+
+  /* Tertiary layer */
+  --color-bg-tertiary: #ffffff;
+  --color-hover-tertiary: #8c8c8c;
+  --color-text-tertiary: #1f1f1f;
+
+  /* Accents (optional helpers) */
+  --color-accent-primary: #4a90d9;
+  --color-accent-danger: #e74c3c;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+    /* Typography */
+    --font-family-base: 'Times New Roman', serif;
+    --font-size-base: 16px;
+    --font-size-lg: 18px;
+    --font-size-sm: 14px;
+
+}
