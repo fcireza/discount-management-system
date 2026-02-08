@@ -1,5 +1,5 @@
 
-using backend.src.application.DTOs;
+using backend.src.application.DTOs.createDiscountDto;
 using backend.src.application.Interfaces;
 using backend.src.domain.Entities.Discounts;
 using backend.src.domain.Enums;

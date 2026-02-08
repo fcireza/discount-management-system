@@ -1,4 +1,4 @@
-namespace Application.DTOs.DiscountResponseDto;
+namespace backend.src.application.DTOs.DiscountResponseDto;
 
 public class DiscountResponseDto
 {

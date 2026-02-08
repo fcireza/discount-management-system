@@ -1,4 +1,4 @@
-using Application.DTOs.ApplyDiscountRequestDto;
+using backend.src.application.DTOs.ApplyDiscountRequestDto;
 using backend.src.application.DTOs.createDiscountDto;
 using backend.src.domain.Enums;
 using System.ComponentModel.DataAnnotations;

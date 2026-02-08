@@ -2,8 +2,8 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using backend.src.application.Services;
-using backend.src.application.DTOs;
-using Application.DTOs.ApplyDiscountRequestDto;
+using backend.src.application.DTOs.createDiscountDto;
+using backend.src.application.DTOs.ApplyDiscountRequestDto;
 using System;
 
 namespace DiscountsControllers
