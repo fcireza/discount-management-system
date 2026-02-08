@@ -1,0 +1,37 @@
+## Build results
+bin/
+obj/
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Rider / VS / VS Code
+.idea/
+.vs/
+*.swp
+*~
+backend.http
+
+## .NET tools
+*.DotSettings.user
+project.lock.json
+
+## NuGet
+*.nupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+
+## Environment variables
+.env
+*.env.local
+
+## OS files
+.DS_Store
+Thumbs.db
+
+## Logs
+logs/
+*.log
