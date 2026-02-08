@@ -20,7 +20,6 @@ function Home({ page, setPage }: HomeProps) {
     <div className="container">
       {page.view === 'list' && (
         <DiscountListPage
-          onNavigateToForm={() => setPage({ view: 'form' })}
           onNavigateToSimulator={(id) => setPage({ view: 'simulator', discountId: id })}
           onNavigateToDetails={(id) => setPage({ view: 'details', discountId: id })}
         />

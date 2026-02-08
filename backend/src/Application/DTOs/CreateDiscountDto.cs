@@ -1,6 +1,7 @@
-namespace backend.src.application.DTOs;
 using backend.src.domain.Enums;
 using System.Text.Json.Serialization;
+
+namespace backend.src.application.DTOs.createDiscountDto;
 public class CreateDiscountDto
 {
     public string Name { get; set; } = string.Empty;

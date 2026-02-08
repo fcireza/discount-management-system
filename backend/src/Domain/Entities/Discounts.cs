@@ -1,3 +1,5 @@
+using Application.DTOs.ApplyDiscountRequestDto;
+using backend.src.application.DTOs.createDiscountDto;
 using backend.src.domain.Enums;
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
@@ -24,9 +26,14 @@ public abstract class Discounts
 
     public abstract float CalculateDiscount(float unitPrice, int quantity);
 
-    public virtual ValidationResult Validate(int quantity)
+    public virtual ValidationResult ValidateCreate(CreateDiscountDto dto)
     {
-        if (quantity <= 0)
+        return ValidationResult.Success();
+    }
+
+    public virtual ValidationResult ValidateApply(ApplyDiscountRequestDto dto)
+    {
+        if (dto.quantity <= 0)
             return ValidationResult.Failure("Quantity must be greater than zero.");
 
         return ValidationResult.Success();

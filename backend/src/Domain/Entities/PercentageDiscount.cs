@@ -1,5 +1,6 @@
 namespace backend.src.domain.Entities.Discounts;
 using backend.src.domain.Enums;
+using backend.src.application.DTOs.createDiscountDto;
 
 public class PercentageDiscount : Discounts
 {
@@ -13,6 +14,15 @@ public class PercentageDiscount : Discounts
      base(discountId, Name, DiscountType.PercentageDiscount)
     {
         this._percentage = percentage;
+    }
+
+    public override ValidationResult ValidateCreate(CreateDiscountDto dto)
+    {
+        if (dto.Percentage < 0 || dto.Percentage > 100)
+        {
+            return ValidationResult.Failure("Percentage must be between 0 and 100.");
+        }
+        return ValidationResult.Success();
     }
 
     public override float CalculateDiscount(float unitPrice, int quantity)
